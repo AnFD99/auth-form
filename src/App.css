@@ -15,11 +15,6 @@ body {
    font-family: poppins;
 }
 
-code {
-   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-      monospace;
-}
-
 * {
    box-sizing: border-box;
 }
@@ -40,7 +35,6 @@ p {
    max-height: 500px;
    border-radius: 20px;
    padding: 40px;
-   box-sizing: border-box;
    background: #ecf0f3;
    box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
 }
@@ -53,7 +47,6 @@ p {
    border-radius: 20px;
    margin-top: 70px;
    padding: 40px;
-   box-sizing: border-box;
    background: #ecf0f3;
    box-shadow: 14px 14px 20px #cbced1, -5px -5px 20px white;
 }
@@ -65,18 +58,12 @@ p {
    letter-spacing: 1px;
 }
 
-
-input {
-   caret-color: red;
-}
-
 .logo {
    height: 100px;
    width: 100px;
    background: center/70% no-repeat url('./assets/img/logoipsum-293.svg');
    margin: auto;
    border-radius: 50%;
-   box-sizing: border-box;
    box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
 }
 
@@ -109,7 +96,6 @@ button {
    margin-bottom: 20px;
    border: none;
    outline: none;
-   box-sizing: border-box;
 }
 
 input::placeholder {
@@ -124,6 +110,13 @@ input {
    font-size: 14px;
    border-radius: 50px;
    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+   -webkit-appearance: none;
+   -webkit-box-shadow: inset 6px 6px 6px #cbced1,
+      inset -6px -6px 6px white;
+}
+
+input {
+   caret-color: red;
 }
 
 button {
@@ -140,4 +133,26 @@ button {
 
 button:hover {
    box-shadow: none;
+}
+
+@media screen and (max-width: 480px) {
+   .container {
+      width: 280px;
+      max-height: 550px;
+      padding: 20px;
+   }
+
+   .users-container {
+      width: 300px;
+      max-height: 200px;
+      padding: 20px;
+   }
+
+   .title {
+      font-size: 1.3rem;
+   }
+
+   .second-title {
+      font-size: 1.2rem;
+   }
 }
